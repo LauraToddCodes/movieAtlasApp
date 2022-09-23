@@ -1,8 +1,7 @@
 // driver and connection
 const MongoClient = require("mongodb").MongoClient
 
-const dbConnectionUrl =
-    "mongodb+srv://lauratodd:7D%24e23%21vIehj@cluster0.zcmva.mongodb.net/?retryWrites=true&w=majority"
+const dbConnectionUrl = process.env.API_KEY
 
 function initialise(
     dbName,
